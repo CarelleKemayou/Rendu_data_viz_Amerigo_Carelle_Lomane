@@ -71,8 +71,8 @@ project/
 │   └── Nb_film_an.js
 ├── Variable/
 └── Image/
----
 ```
+---
 ## Comment exécuter le projet
 
 1. Installer les dépendances Python
@@ -562,4 +562,5 @@ Math.min()   // Limiter à valeur max
 * Le traitement large volume de données côté client peut être lent
 * Les navigateurs très anciens ne supportent pas ES6+
 * Les fichiers JavaScript doivent être chargés dans le bon ordre
+
 
