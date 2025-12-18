@@ -1,0 +1,85 @@
+<link rel="stylesheet" href="Style.css">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget</title>
+</head>
+
+<body>
+    <div id="Header">
+        <div id="logo">
+            <a href="Netflix.html">
+                <img src="Image\Logo.jpg"></a>
+        </div>
+        <div id="links">
+            <a href="Social.html">Média</a>
+            <a href="Genre.html">Genre</a>
+            <a href="Budget.html">Budget</a>
+
+        </div>
+    </div>
+    <div id="page">
+
+        <div class="Section">
+            <div class="graph">
+                <canvas id="prix_service_par_mois"></canvas>
+            </div>
+            <div class="text">
+                <p class="Titre">Netflix est-il plus cher ?</p>
+                <p class="Paragraphe">L'évolution du prix de l'abonnement par mois des différents sites de streaming
+                    sans pub et le moins cher.
+                </p>
+            </div>
+        </div>
+
+        <div class="Section_bis">
+            <div class="text">
+                <p class="Titre">On peut voir l'évolution du budget de production</p>
+            </div>
+            <div class="graph">
+                <canvas id="evo_budget"></canvas>
+            </div>
+        </div>
+
+        <div class="Section_bis">
+            <div class="graph">
+                <canvas id="Nombre_de_films_sorties_par_annee"></canvas>
+            </div>
+
+            <div class="text">
+                <p class="Titre">Netflix sorte t-il de plus en plus de film ?</p>
+                <p class="Paragraphe">Une analyse académique récente souligne que le service vidéo est inclus dans un
+                    abonnement plus large (Prime) qui donne aussi accès à la livraison, la musique, et d’autres services
+                    — ce qui signifie que la SVOD
+                    n’est pas au cœur de l’activité d’Amazon comme elle l’est pour Netflix.
+                </p>
+                <div id="lien">
+                    <a
+                        href="https://www.hollywoodreporter.com/business/business-news/studio-films-more-cost-efficient-than-netflix-originals-1236167719/">The
+                        Hollywood Reporter</a>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script src="Variable/variables_streaming_service_prices_per_month.js"></script>
+    <script src="Graphe/evo_prix_plateforme.js"></script>
+
+    <script src="Variable/variables_average_budget_revenue_per_year.js"></script>
+    <script src="Graphe/evo_budget_film.js"></script>
+
+    <script src="Variable/variables_movies_per_year_per_platform.js"></script>
+    <script src="Graphe/Nb_film_an.js"></script>
+
+</body>
+
+</html>

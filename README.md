@@ -1,4 +1,3 @@
-[README.md](https://github.com/user-attachments/files/24245214/README.md)
 
 # Projet dataviz:
 ## Creation d'une plateforme visiualisation de données

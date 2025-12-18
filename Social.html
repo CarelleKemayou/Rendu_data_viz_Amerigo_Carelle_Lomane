@@ -1,0 +1,73 @@
+<link rel="stylesheet" href="style.css">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Média</title>
+</head>
+
+
+<body>
+    <div id="Header">
+        <div id="logo">
+            <a href="Netflix.html">
+                <img src="Image\Logo.jpg"></a>
+        </div>
+        <div id="links">
+            <a href="Social.html">Média</a>
+            <a href="Genre.html">Genre</a>
+            <a href="Budget.html">Budget</a>
+
+        </div>
+    </div>
+    <div id="page">
+        <div class="Section">
+            <div class="graph">
+                <canvas id="Avis_moyen_par_plateforme"></canvas>
+            </div>
+
+            <div class="text">
+                <p class="Titre">Qu'elle plateforme a les meilleurs avis ?</p>
+                <p class="Paragraphe">Prime Video est la deuxième plateforme de streaming la plus populaire, derrière
+                    Netflix. Contrairement à Netflix, la plateforme ne fait pas l’unanimité auprès du public. Son
+                    interface est souvent critiquée sur les réseaux sociaux : jugée peu intuitive, complexe et peu
+                    pratique. Une interface inefficace nuit à l’expérience utilisateur, élément clé pour fidéliser les
+                    abonnés.
+                </p>
+                <div id="lien">
+                    <a
+                        href="https://www.leblogducinema.com/actualites/breves/svod-evolutions-du-marche-du-streaming-en-france-au-troisieme-trimestre-2025-65532606/">Evolution
+                        du marché du streaming en France</a>
+                </div>
+                <div id="lien">
+                    <a
+                        href="https://www.radiofrance.fr/franceinter/podcasts/la-chronique-mediatique/la-chronique-mediatique-de-cyril-lacarriere-du-mardi-25-avril-2023-6590756?">L'erreur
+                        de Amazon</a>
+                </div>
+            </div>
+        </div>
+        <div class="Section_bis">
+            <div class="text">
+                <p class="Titre">Netflix ont-ils plus de film mieux noté que les autres ?</p>
+            </div>
+            <div class="graph">
+                <canvas id="Nb_film_bien_note"></canvas>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script src="Variable/variables_mean_tv_show_ratings_per_platform.js"></script>
+    <script src="Graphe/Mean_avis.js"></script>
+
+    <script src="Variable/variables_count_and_percentage_tv_shows_above_threshold_per_platform.js"></script>
+    <script src="Graphe/note_sup_7.js"></script>
+</body>
+
+</html>

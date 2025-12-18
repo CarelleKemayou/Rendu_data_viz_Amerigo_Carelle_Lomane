@@ -1,0 +1,202 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url(fonts/Montserrat-Black.ttf);
+}
+
+@font-face {
+    font-family: 'CrimsonText';
+    src: url(fonts/CrimsonText-Regular.ttf);
+}
+
+body {
+    background-color: #272727;
+    margin: 0;
+    border: 0;
+}
+
+.Section,
+.Section_bis,
+.Pie_chart {
+    background: #1f1f1f;
+    border-radius: 20px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    /* Ombre portée profonde */
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    /* Bordure très fine */
+}
+
+#Header {
+    background-color: #272727;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+}
+
+#logo img {
+    height: 48px;
+}
+
+#links {
+    display: flex;
+    justify-content: space-between;
+    width: 25%;
+}
+
+#links a {
+    font-size: 1.25em;
+    color: #cf0c0c;
+    font-family: 'CrimsonText';
+}
+
+#lien a {
+    font-size: 1em;
+    color: #6b0000;
+    font-family: 'CrimsonText';
+}
+
+.Section {
+    display: flex;
+    background-color: #272727;
+    padding: 2.5%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Section_bis {
+    display: flex;
+    justify-content: space-between;
+    padding: 2.5%;
+    align-items: center;
+}
+
+.graph {
+    width: 706px;
+    height: 603px;
+}
+
+.img img {
+    width: 350px;
+    height: 450px;
+}
+
+.text {
+    color: azure;
+    display: flex;
+    width: 40%;
+    line-height: 1.6;
+    /* Donne de l'air au texte */
+    flex-direction: column;
+    margin-bottom: 5%;
+}
+
+
+.Titre {
+    color: #E50914;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: 3em;
+}
+
+.Paragraphe {
+    text-align: justify;
+    font-family: 'CrimsonText';
+    font-size: 1.5em;
+}
+
+
+.Analyse {
+    display: flex;
+    justify-content: center;
+    margin: 2.5%;
+}
+
+.Rapport {
+    display: flex;
+    background-color: #d6dbd2;
+    width: 40%;
+    flex-direction: column;
+    padding: 16px;
+}
+
+.category {
+    display: flex;
+    width: 60%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: baseline;
+}
+
+.Intro {
+    color: azure;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 5%;
+}
+
+.Intro p {
+    text-align: center;
+    width: 60%;
+    font-family: 'CrimsonText';
+    font-size: 1.5em;
+}
+
+canvas {
+    /* Crée une lueur subtile autour du graphique */
+    filter: drop-shadow(0px 0px 15px rgba(255, 255, 255, 0.05));
+    background: linear-gradient(145deg, #1a1a1a, #252525);
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.table-wrapper {
+    margin: 20px;
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.table-wrapper h3 {
+    color: #E0E0E0;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.category-table {
+    width: 100%;
+    border-collapse: collapse;
+    color: #E0E0E0;
+}
+
+.category-table thead {
+    background: #222;
+}
+
+.category-table th {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 2px solid #444;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.category-table td {
+    padding: 10px 12px;
+    border-bottom: 1px solid #333;
+}
+
+.category-table tbody tr:hover {
+    background: #252525;
+}
+
+.category-table tbody tr:nth-child(even) {
+    background: #1f1f1f;
+}

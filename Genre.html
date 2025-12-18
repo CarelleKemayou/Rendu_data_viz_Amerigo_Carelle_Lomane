@@ -1,0 +1,73 @@
+<link rel="stylesheet" href="Style.css">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genre</title>
+</head>
+
+
+<body>
+    <div id="Header">
+        <div id="logo">
+            <a href="Netflix.html">
+                <img src="Image\Logo.jpg"></a>
+        </div>
+        <div id="links">
+            <a href="Social.html">Média</a>
+            <a href="Genre.html">Genre</a>
+            <a href="Budget.html">Budget</a>
+
+        </div>
+    </div>
+    <div id="page">
+
+        <div class="Section_bis">
+            <div class="text">
+                <p class="Titre">Netflix a t-elle diversifier le pays de production d'un film ou d'une série ?</p>
+                <p class="Paragraphe">Netflix tend à produire massivement des drames et comédies originales pour une
+                    large audience, tandis que Disney+ base beaucoup de son contenu sur ses franchises emblématiques
+                    (Marvel, animation familiale), ce qui influence la répartition des genres visibles sur chaque
+                    plateforme.</p>
+            </div>
+            <div class="graph">
+                <canvas id="USA/autrs_Netflix"></canvas>
+            </div>
+        </div>
+
+        <div class="Section">
+            <div class="graph">
+                <canvas id="USA/autrs_AmazonPrime"></canvas>
+            </div>
+            <div class="graph">
+                <canvas id="USA/autrs_Disney"></canvas>
+            </div>
+            <div class="graph">
+                <canvas id="USA/autrs_Hulu"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <div class="Section_bis">
+        <div id="Netflix"></div>
+        <div id="Amazon"></div>
+        <div id="Disney"></div>
+        <div id="Hulu"></div>
+
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script src="Variable/variables_us_vs_world_distribution_per_platform.js"></script>
+    <script src="Variable/variables_category_distribution_per_platform.js"></script>
+
+    <script src="Graphe/nb_film_par_pays.js"></script>
+    <script src="Graphe/pie_category.js"></script>
+
+</body>
+
+</html>
